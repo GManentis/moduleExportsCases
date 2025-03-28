@@ -3,6 +3,8 @@
 
 /*The strange case of module exports. In the example below the exported module will work fine though its logic collides with the above cases
 The following module will work but consts are not in order, cases that would make things worse.
+
+Edit: Probably the const displayMessage works due to javascript hoisting
 */
 module.exports = function(){
 	displayMessage();
