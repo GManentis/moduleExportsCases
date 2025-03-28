@@ -3,10 +3,7 @@ const myModuleB = {prop1:1};
 module.exports = myModuleB; //first there must be moduleB before export
 myModuleB.prop2 = "2";
 /*
-It is noted that myModuleB shows that same behaviour as myModuleA. Explained:
-1. node checks that myModuleB has been set
-2. node checks that myModuleB has to get an extra prop
-3. node exports myModuleB as module
+In this case the prop2 will be included since the moduleB pointer has been passed in exports
  */
 
 /*
